@@ -57,7 +57,7 @@ export default function Home() {
           </nav>
           <div className="text-center p-10 py-10">
             <h2 className="text-5xl py-2 text-teal-600  mb-8 font-medium dark:text-teal-400 md:text-6xl">
-              Ritek Sharma
+              Ritik Sharma
             </h2>
             <h3 className="text-2xl py-2 dark:text-white md:text-3xl">
               Front-End Developer
@@ -129,7 +129,8 @@ export default function Home() {
             <div className="basis-1/3 flex-1 ">
             <Link href="https://comfy-hummingbird-67bcac.netlify.app">
             <div>
-            <h1 className="text-xl font-bold mt-4 text-cyan-50 cursor-pointer">Gemini Clone</h1>
+            <h1 className="text-xl font-bold mt-4 text-gray-800 cursor-pointer dark:text-cyan-50  ">Gemini Clone - React/Api</h1><h3 className="text-l  text-gray-800 cursor-pointer dark:text-cyan-50">Built an AI-powered chat engine that uses a natural language
+            API to deliver intelligent, engaging conversations.</h3>
               <Image
                 className="rounded-lg object-contain  cursor-pointer"
                 width={"100%"}
@@ -147,7 +148,8 @@ export default function Home() {
             <div className="basis-1/3 flex-1">
             <Link href="https://capable-donut-8b0645.netlify.app">
             <div>
-            <h1 className="text-xl font-bold mt-4 text-cyan-50 cursor-pointer">Youtube Clone</h1>
+            <h1 className="text-xl font-bold mt-4 text-gray-800 cursor-pointer dark:text-cyan-50 ">Youtube Clone - React/Material UI</h1><h3 className="text-l  text-gray-800 cursor-pointer dark:text-cyan-50">Developed a video streaming platform using RapidAPI, allowing users to search and watch videos. 
+              The app features a responsive design for seamless playback across devices.</h3>
               <Image
                 className="rounded-lg object-contain  cursor-pointer"
                 width={"100%"}
@@ -162,7 +164,9 @@ export default function Home() {
             <div className="basis-1/3 flex-1">
             <Link href="https://super-sherbet-2c13ad.netlify.app">
             <div>
-            <h1 className="text-xl font-bold mt-4 text-cyan-50 cursor-pointer">Weather App</h1>
+            <h1 className="text-xl font-bold mt-4 text-gray-800 cursor-pointer dark:text-cyan-50 ">Weather App - React/Api</h1><h3 className="text-l  text-gray-800 cursor-pointer dark:text-cyan-50">Built a weather app that consumes a free web API to
+            display the weather of any city in the world, featuring
+              custom animations.</h3>
               <Image
                 className="rounded-lg object-contain  cursor-pointer"
                 width={"100%"}
@@ -175,7 +179,8 @@ export default function Home() {
               </Link>
             </div>
             <div className="basis-1/3 flex-1">
-            <h1 className="text-xl font-bold mt-4 text-cyan-50 cursor-pointer">Quote Generator</h1>
+            <h1 className="text-xl font-bold mt-4 text-gray-800 cursor-pointer dark:text-cyan-50 ">Quote Generator - React/Api</h1><h3 className="text-l  text-gray-800 cursor-pointer dark:text-cyan-50"> Built and deployed a quote generator website, which fetches an api
+            data and displays in the UI</h3>
             <Link href="https://fastidious-cocada-889604.netlify.app">
             <div>
               <Image
