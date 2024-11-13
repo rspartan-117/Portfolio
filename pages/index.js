@@ -4,8 +4,10 @@ import {
   AiFillLinkedin,
   AiFillYoutube,
   AiFillGithub,
+  AiOutlineMail,
 } from "react-icons/ai";
 import { BsFillMoonStarsFill } from "react-icons/bs";
+import { FaExternalLinkAlt } from "react-icons/fa";
 import { useState } from "react";
 import deved from "../public/dev-ed-wave.png";
 import code from "../public/code.png";
@@ -21,8 +23,8 @@ import web6 from "../public/web6.png";
 import Link from "next/link";
 import gemini_thumbnail from "../public/gemini_thumbnail.png";
 import quote_thumbnail from "../public/quote_thumbnail.png";
-import youtube_thumbnail from "../public/youtube_thumbnail.png"
-import weather_thumbnail from "../public/weather_thumbnail.png"
+import youtube_thumbnail from "../public/youtube_thumbnail.png";
+import weather_thumbnail from "../public/weather_thumbnail.png";
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(true);
@@ -63,40 +65,45 @@ export default function Home() {
               Front-End Developer
             </h3>
             <p className="text-md py-5 leading-8 text-gray-800 dark:text-gray-200 max-w-xl mx-auto md:text-xl">
-            Frontend developer with a passion for building beautiful and functional web interfaces.Skilled in crafting engaging and user-friendly interfaces that bring ideas to life. 
-            
+              Frontend developer with a passion for building beautiful and
+              functional web interfaces.Skilled in crafting engaging and
+              user-friendly interfaces that bring ideas to life.
             </p>
             <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600 dark:text-gray-400">
-              <AiFillTwitterCircle />
+              <Link href="mailto:riteksharmachd@gmail.com">
+                <AiOutlineMail className="cursor-pointer mt-10 " />
+              </Link>
               <Link href="https://www.linkedin.com/in/ritik-sharma-cse/">
-              <AiFillLinkedin className="cursor-pointer"/>
+                <AiFillLinkedin className="cursor-pointer mt-10" />
               </Link>
               <Link href="https://github.com/rspartan-117">
-              <AiFillGithub  className="cursor-pointer"/>
+                <AiFillGithub className="cursor-pointer mt-10" />
               </Link>
             </div>
-           
           </div>
         </section>
         <section>
           <div>
             <h3 className="text-3xl py-1 dark:text-white">Skills</h3>
-           
+
             <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
-            I offer a wide range of services, including responsive web design, 
-            interactive front-end development, and optimized code solutions
+              I offer a wide range of services, including responsive web design,
+              interactive front-end development, and optimized code solutions
             </p>
           </div>
           <div className="lg:flex gap-10">
             <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-gray-500 flex-1">
               <Image src={design} width={100} height={100} alt="Icon" />
               <h3 className="text-lg font-medium pt-8 pb-2  ">
-              High-Quality Development
+                High-Quality Development
               </h3>
               <p className="py-2">
-              Building efficient and scalable code to create seamless user experiences.&apos;
+                Building efficient and scalable code to create seamless user
+                experiences.&apos;
               </p>
-              <h4 className="py-4 text-teal-500  dark:text-teal-200">Technologies I Work With</h4>
+              <h4 className="py-4 text-teal-500  dark:text-teal-200">
+                Technologies I Work With
+              </h4>
               <p className="text-gray-900 py-1">HTML & CSS</p>
               <p className="text-gray-900 py-1">JavaScript/Typescript</p>
               <p className="text-gray-900 py-1">React</p>
@@ -105,98 +112,124 @@ export default function Home() {
             <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-gray-500  flex-1">
               <Image src={code} width={100} height={100} alt="Icon" />
               <h3 className="text-lg font-medium pt-8 pb-2 ">
-              User-Centric Experiences
+                User-Centric Experiences
               </h3>
               <p className="py-2">
-              Designing and developing intuitive interfaces that prioritize user experience and accessibility.
+                Designing and developing intuitive interfaces that prioritize
+                user experience and accessibility.
               </p>
-              <h4 className="py-4 text-teal-500  dark:text-teal-200">Key Frontend Practices</h4>
+              <h4 className="py-4 text-teal-500  dark:text-teal-200">
+                Key Frontend Practices
+              </h4>
               <p className="text-gray-900 py-1">Responsive Design</p>
               <p className="text-gray-900 py-1">Accessible Components</p>
               <p className="text-gray-900 py-1">Interactive Animations</p>
               <p className="text-gray-900 py-1">Cross-Browser Compatibility</p>
             </div>
-            
           </div>
         </section>
         <section className="py-10">
           <div>
             <h3 className="text-3xl py-1 dark:text-white "> MY PROJECTS</h3>
-           
-           
           </div>
           <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">
             <div className="basis-1/3 flex-1 ">
-            <Link href="https://comfy-hummingbird-67bcac.netlify.app">
-            <div>
-            <h1 className="text-xl font-bold mt-4 text-gray-800 cursor-pointer dark:text-cyan-50  ">Gemini Clone - React/Api</h1><h3 className="text-l  text-gray-800 cursor-pointer dark:text-cyan-50">Built an AI-powered chat engine that uses a natural language
-            API to deliver intelligent, engaging conversations.</h3>
-              <Image
-                className="rounded-lg object-contain  cursor-pointer"
-                width={"100%"}
-                height={"100%"}
-                layout="responsive"
-                src={gemini_thumbnail}
-                alt="Gemini Clone"
-              
-                
-              />
-              </div>
-              
+              <Link href="https://comfy-hummingbird-67bcac.netlify.app">
+                <div>
+                  <h1 className="text-xl font-bold mt-4 text-gray-800 cursor-pointer dark:text-cyan-50 inline-block">
+                    Gemini Clone - React/Api
+                  </h1>
+                  <FaExternalLinkAlt className="inline-block ml-3 mb-1 text-2xl dark:text-white cursor-pointer" />
+                </div>
+              </Link>
+              <h3 className="text-l text-gray-800 dark:text-cyan-50">
+                Built an AI-powered chat engine that uses a natural language API
+                to deliver intelligent, engaging conversations.
+              </h3>
+              <Link href="https://comfy-hummingbird-67bcac.netlify.app">
+                <Image
+                  className="rounded-lg object-contain  cursor-pointer"
+                  width={"100%"}
+                  height={"100%"}
+                  layout="responsive"
+                  src={gemini_thumbnail}
+                  alt="Gemini Clone"
+                />
               </Link>
             </div>
             <div className="basis-1/3 flex-1">
-            <Link href="https://capable-donut-8b0645.netlify.app">
-            <div>
-            <h1 className="text-xl font-bold mt-4 text-gray-800 cursor-pointer dark:text-cyan-50 ">Youtube Clone - React/Material UI</h1><h3 className="text-l  text-gray-800 cursor-pointer dark:text-cyan-50">Developed a video streaming platform using RapidAPI, allowing users to search and watch videos. 
-              The app features a responsive design for seamless playback across devices.</h3>
-              <Image
-                className="rounded-lg object-contain  cursor-pointer"
-                width={"100%"}
-                height={"100%"}
-                layout="responsive"
-                src={youtube_thumbnail}
-                alt="Youtube Clone"
-              />
-              </div>
+              <Link href="https://capable-donut-8b0645.netlify.app">
+                <div>
+                  <h1 className="text-xl font-bold mt-4 text-gray-800 cursor-pointer inline-block dark:text-cyan-50 ">
+                    Youtube Clone - React/Material UI
+                  </h1>
+                  <FaExternalLinkAlt className="inline-block ml-3 mb-1 text-2xl dark:text-white cursor-pointer" />
+                </div>
+              </Link>
+              <h3 className="text-l  text-gray-800  dark:text-cyan-50">
+                Developed a video streaming platform using RapidAPI, allowing
+                users to search and watch videos. The app features a responsive
+                design for seamless playback across devices.
+              </h3>
+              <Link href="https://capable-donut-8b0645.netlify.app">
+                <Image
+                  className="rounded-lg object-contain  cursor-pointer"
+                  width={"100%"}
+                  height={"100%"}
+                  layout="responsive"
+                  src={youtube_thumbnail}
+                  alt="Youtube Clone"
+                />
               </Link>
             </div>
             <div className="basis-1/3 flex-1">
-            <Link href="https://super-sherbet-2c13ad.netlify.app">
-            <div>
-            <h1 className="text-xl font-bold mt-4 text-gray-800 cursor-pointer dark:text-cyan-50 ">Weather App - React/Api</h1><h3 className="text-l  text-gray-800 cursor-pointer dark:text-cyan-50">Built a weather app that consumes a free web API to
-            display the weather of any city in the world, featuring
-              custom animations.</h3>
-              <Image
-                className="rounded-lg object-contain  cursor-pointer"
-                width={"100%"}
-                height={"100%"}
-                layout="responsive"
-                src={weather_thumbnail}
-               alt="Weather App"
-              />
-              </div>
+              <Link href="https://super-sherbet-2c13ad.netlify.app">
+                <div>
+                  <h1 className="text-xl font-bold mt-4 text-gray-800 cursor-pointer inline-block dark:text-cyan-50 ">
+                    Weather App - React/Api
+                  </h1>
+                  <FaExternalLinkAlt className="inline-block ml-3 mb-1 text-2xl dark:text-white cursor-pointer" />
+                </div>
+              </Link>
+              <h3 className="text-l  text-gray-800  dark:text-cyan-50">
+                Built a weather app that consumes a free web API to display the
+                weather of any city in the world, featuring custom animations.
+              </h3>
+              <Link href="https://super-sherbet-2c13ad.netlify.app">
+                <Image
+                  className="rounded-lg object-contain  cursor-pointer"
+                  width={"100%"}
+                  height={"100%"}
+                  layout="responsive"
+                  src={weather_thumbnail}
+                  alt="Weather App"
+                />
               </Link>
             </div>
             <div className="basis-1/3 flex-1">
-            <h1 className="text-xl font-bold mt-4 text-gray-800 cursor-pointer dark:text-cyan-50 ">Quote Generator - React/Api</h1><h3 className="text-l  text-gray-800 cursor-pointer dark:text-cyan-50"> Built and deployed a quote generator website, which fetches an api
-            data and displays in the UI</h3>
-            <Link href="https://fastidious-cocada-889604.netlify.app">
-            <div>
-              <Image
-                className="rounded-lg object-contain  cursor-pointer"
-                width={"100%"}
-                height={"100%"}
-                layout="responsive"
-                src={quote_thumbnail}
-                alt="Quote_Generator"
-                
-              />
-              </div>
+              <Link href="https://fastidious-cocada-889604.netlify.app">
+                <div>
+                  <h1 className="text-xl font-bold mt-4 text-gray-800 cursor-pointer inline-block dark:text-cyan-50 ">
+                    Quote Generator - React/Api
+                  </h1>
+                  <FaExternalLinkAlt className="inline-block ml-3 mb-1 text-2xl dark:text-white cursor-pointer" />
+                </div>
+              </Link>
+              <h3 className="text-l  text-gray-800  dark:text-cyan-50">
+                Built and deployed a quote generator website, which fetches an
+                api data and displays in the UI
+              </h3>
+              <Link href="https://fastidious-cocada-889604.netlify.app">
+                <Image
+                  className="rounded-lg object-contain  cursor-pointer"
+                  width={"100%"}
+                  height={"100%"}
+                  layout="responsive"
+                  src={quote_thumbnail}
+                  alt="Quote_Generator"
+                />
               </Link>
             </div>
-            
-           
           </div>
         </section>
       </main>
