@@ -25,7 +25,7 @@ import youtube_thumbnail from "../public/youtube_thumbnail.png"
 import weather_thumbnail from "../public/weather_thumbnail.png"
 
 export default function Home() {
-  const [darkMode, setDarkMode] = useState(false);
+  const [darkMode, setDarkMode] = useState(true);
 
   return (
     <div className={darkMode ? "dark" : ""}>
