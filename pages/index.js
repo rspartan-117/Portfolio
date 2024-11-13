@@ -87,8 +87,8 @@ export default function Home() {
             <h3 className="text-3xl py-1 dark:text-white">Skills</h3>
 
             <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
-              I offer a wide range of services, including responsive web design,
-              interactive front-end development, and optimized code solutions
+            I offer a wide range of solutions, including responsive web design, interactive front-end development,
+             and optimized code solutions.
             </p>
           </div>
           <div className="lg:flex gap-10">
